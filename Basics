@@ -1,0 +1,28 @@
+// JAVA VARARGS -SIMPLE ADDITION
+// Link to the problem - https://www.hackerrank.com/challenges/simple-addition-varargs/problem?isFullScreen=true
+import java.io.*;
+import java.util.*;
+
+class Add{
+       
+    public  void add(int ...a){
+        int sum = 0;
+        String rem_plus = "";
+        for(int i : a){
+        sum += i ; 
+        rem_plus += i +"+";
+        }
+        System.out.println(rem_plus.substring(0,rem_plus.length()-1)+"="+sum);
+    }
+}
+public class Solution {
+
+    public static void main(String[] args) {
+       Add ad = new Add();
+       ad.add(1,2);
+       ad.add(1,2,3);
+       ad.add(1,2,3,4,5);   
+       ad.add(1,2,3,4,5,6); 
+
+    }
+}
