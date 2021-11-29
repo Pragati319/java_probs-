@@ -26,3 +26,5 @@ public class Solution {
 
     }
 }
+
+//SPAN STOCK PROBLEM USING FOR LOOP WITH TIME COMPLEXITY O(N)^2  (Naive Approach)
