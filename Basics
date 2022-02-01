@@ -28,3 +28,53 @@ public class Solution {
 }
 
 //SPAN STOCK PROBLEM USING FOR LOOP WITH TIME COMPLEXITY O(N)^2  (Naive Approach)
+/******************************************************************************
+
+                            Overloading Methods
+
+*******************************************************************************/
+
+class Overloading{
+    
+    String  numbers(int a , int b){
+        return a +" Two Integers "+b;
+    }
+    double numbers(int a, double b, double g){
+        return a+b+g;
+    }
+    void numbers(String s){
+        		System.out.println("Overloading method "+s);
+    }
+    int i;
+    int j;
+    Overloading(int i, int j){
+        this.i = i;
+        this.j = j;
+    }
+    
+    boolean example( Overloading ob){
+        System.out.println("Object Overloading");
+        
+        if(ob.i == i && ob.j == j)
+        return true;
+        
+        return false;
+    } 
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Overloading eg = new Overloading(12,56);
+				Overloading eg2 = new Overloading(12,56);
+
+		
+		System.out.println(eg.numbers(12,4));
+		System.out.println(eg.numbers(12,4,45));
+		eg.numbers("with string type parameters");
+		
+		boolean ov = eg.example(eg2);
+		System.out.println(ov);
+
+		
+	}
+}
